@@ -1,28 +1,42 @@
-# 🔁 Recursion:Palindrome Checker Using Recursion in Python
+# 🔁 Recursion:Factorial Using Recursion in Python
 
 ## 🎯 AIM:
-To write a Python program to check whether a given string is a **palindrome** using **recursion**.
-
+Write a Python program to find the result of a! - b! using recursion.
 ---
 
 ## 🧠 ALGORITHM:
 
 1. **Start**
-2. Define a recursive function `is_palindrome(word)`
-   - **Base Case:** If the string length is less than 1, return `True`
-   - **Recursive Case:** If the first and last characters match, call the function recursively on the substring without first and last characters
-   - Else, return `False`
-3. Get input from the user
-4. Call the recursive function
-5. Print whether the string is a palindrome
-6. **Stop**
+2.Define a Recursive Factorial Function: Create a function, let's say factorial(n), that takes a non-negative integer n.
+
+3.Establish the Base Case: Inside the factorial(n) function, include a condition where if n is 0 or 1, it returns 1. This is the stopping point for the recursion.
+
+4.Implement the Recursive Step: If n is greater than 1, the function should return the result of n * factorial(n - 1). This breaks down the problem into smaller, manageable parts.
+
+5.Create a Main Function: Define a new function, e.g., factorial_difference(a, b), which takes the two numbers a and b as input.
+
+6.Calculate and Return the Result: Inside factorial_difference(a, b), call the factorial function for both a and b, and then return the difference between their results (factorial(a) - factorial(b)).
+7. **Stop**
 
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
+```
+def factorial(n):
+    if(n==0):
+      return 1
+    return(n*factorial(n-1))
+
+a=int(input())
+b=int(input())
+sum=factorial(a)-factorial(b)
+print(sum)
+```
 
 ## OUTPUT
+<img width="399" height="323" alt="image" src="https://github.com/user-attachments/assets/2ee201f9-a820-4f2e-86ab-35ae81c7c4d4" />
+
 
 ## RESULT
+Thus,the program is successfully created.
 
